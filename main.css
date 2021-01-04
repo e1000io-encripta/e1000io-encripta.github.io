@@ -1,0 +1,17 @@
+
+.center{
+    text-align: center;
+}
+.title  {
+    font-size: xx-large;
+}
+.content {
+    font-size: medium;
+    display: block;
+}
+.oculto {
+    display: none;
+}
+.visible {
+    display: block;
+}
