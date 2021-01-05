@@ -29,7 +29,6 @@ function encriptar(text) {
 
 function mostrarResultado(id, value){
     const el = document.getElementById(id)
-    el.classList = 'visible center content'
     el.innerText = value
 }
 

@@ -3,49 +3,51 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>prueba</title>
+    <title>Encriptación</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
 <body>
-    <div class="title center">
-        Encriptación
-    </div>
-    <br><br><br>
-    
-    <div  class="content center">
-        Escribe un texto: 
-        <br>vez que pulses una tecla, se calcula el número
-        <br>cuando pulses fuera de la caja de texto, se encripta el número
-    
-    </div>
-    <div  class="content center">
-            <input type="text" 
-            onkeyup="mostrarNumber('resultadoNumero', this.value)" 
-            onblur="mostrarEncriptado('resultadoEncriptado', this.value)"/>
-    </div>
-    <br><br><br>
-    
-    
-    
-    <div class="content center">
-       Resultado del texto a número:
-    </div>
-    <div id="resultadoNumero" class="content oculto center">
-       
-    </div>
-    <br><br><br>
-
-
-
-
-    <div class="content center">
-        Resultado del último número encriptado
-     </div>
-    <div id="resultadoEncriptado" class="content oculto center">
+    <div class="container">
+        <div  class="row">
+            <div class="title">
+                Encriptación
+            </div>
+        </div>
         
+        <div  class="row">
+            <div  class="label">
+                Escribe un texto: 
+                <br>cada vez que pulses una tecla, se calcula el número
+                <br>cuando pulses fuera de la caja de texto, se encripta el número
+            
+            </div>
+            <div  class="content">
+                <input type="text" 
+                onkeyup="mostrarNumber('resultadoNumero', this.value)" 
+                onblur="mostrarEncriptado('resultadoEncriptado', this.value)"/>
+            </div>        
+        </div>
+        
+        <div  class="row">
+            <div class="label">
+                Resultado del texto a número: (en main.js puedes cambiar la función toNumber)
+            </div>
+            <div id="resultadoNumero" class="content">
+                
+            </div>  
+        </div>  
+    
+        <div  class="row">
+            <div class="label">
+                Resultado del último número encriptado (en main.js puedes cambiar la función encriptar)
+            </div>
+            <div id="resultadoEncriptado" class="content">
+                
+            </div>
+        </div>
+    
     </div>
-
 </body>
 </html>

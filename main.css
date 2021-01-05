@@ -1,17 +1,32 @@
-
-.center{
+.container .row {
+    display: flex;
     text-align: center;
+    justify-content: space-around safe;
+    align-content: space-around safe;
 }
+
+.container {    
+    flex-flow: column wrap;
+    align-items: center safe;
+}
+.row {
+    flex-flow: row wrap;
+    align-items: baseline safe;
+}
+
 .title  {
     font-size: xx-large;
+    flex: auto;
 }
-.content {
+
+.label {
     font-size: medium;
-    display: block;
+    flex: 100%;
+    align-self: flex-start;
 }
-.oculto {
-    display: none;
-}
-.visible {
-    display: block;
+
+.content {
+    font-size: large;
+    flex: auto;
+    align-self: flex-end;
 }
